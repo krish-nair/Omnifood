@@ -86,5 +86,21 @@ $(document).ready(function() {
         
         
         });
+/* Maps */
+        var map = new GMaps({
+          div: '.map',
+          lat: 38.7225309,
+          lng: -9.05,
+          zoom: 12
+        });
+    
+        map.addMarker({
+          lat: 38.7225309,
+          lng: -9.1641954,
+          title: 'Lisbon',
+          infoWindow: {
+                content: '<p>Our LISBON HQ</p>'
+            }
+        });
     
 });
